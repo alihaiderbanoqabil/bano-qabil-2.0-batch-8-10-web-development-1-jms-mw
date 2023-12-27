@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5 of HTML</title>
+</head>
+
+<body>
+
+    <textarea name="" id="" cols="30" rows="10" maxlength="10"></textarea>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <p title="hello">This text contains <sub>subscript</sub> text.</p>
+    <p>This text contains <sup>superscript</sup> text.</p>
+
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+        works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.
+    </blockquote>
+
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </details>
+
+
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+
+
+    <figure>
+        <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <!-- iframe vs object vs embed  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yci475Vwc10?si=v2-xZdYdkWxxrRIL"
+        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    <video width="320" height="240" controls>
+        <!-- <source src="./video (2160p).mp4" type="video/mp4"> -->
+        <source src="https://www.youtube.com/watch?v=rk-yd-J3pnY" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+</body>
+
+</html>
