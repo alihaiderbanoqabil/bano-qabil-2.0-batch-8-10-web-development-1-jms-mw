@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2 of CSS</title>
+    <style>
+        html {
+            font-size: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* span, */
+        div#lorem {
+            margin: 16px;
+            /* margin: 100px; */
+            margin: 16px 32px 48px 72px;
+            margin: 16px 72px;
+            margin: 16px 50px 72px;
+            /* margin-top: 16px;
+    margin-right: 32px;
+    margin-bottom: 48px;
+    margin-left: 72px; */
+            padding: 16px;
+            padding: 16px 32px 48px 72px;
+            border: 2px dotted red;
+            border-width: 10px;
+            border-style: dashed;
+            border-color: green;
+            border-bottom: 50px solid yellow;
+            font-size: xx-large;
+            font-size: 32px;
+            /* font-weight: bolder; */
+            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            /* font-variant: small-caps; */
+            line-height: 1;
+            display: inline-block;
+            text-align: right;
+            text-align: justify;
+            text-decoration: line-through;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px #ff0000;
+        }
+
+        #box {
+            box-shadow: 2px 4px 3px 2px grey;
+        }
+
+        .same {
+            border-radius: 20px;
+
+            background-color: red;
+            color: white;
+            margin: 5px 0;
+            padding: 5px;
+            border: 2px solid yellow;
+        }
+
+        input {
+            accent-color: red;
+        }
+
+        header {
+            /* background-image: url("../class2/images/6CTSOTSOYRCBRNVXUOIAG6.png");
+            background-image: url("https://assets.polkastarter.gg/pixels_cover_4e5dc311d8/pixels_cover_4e5dc311d8.jpg");
+            background-position: left;
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: auto;
+            background-size: contain;
+            background-size: cover;
+            background-size: 100px;
+            background-attachment: fixed; */
+            /* background-origin: ; */
+            /* https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background-origin */
+            position: fixed;
+            width: 100%;
+            background-color: red;
+        }
+
+        .circle {
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            background-color: green;
+        }
+
+
+        article {
+            width: 50%;
+            background-color: red;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        address {
+            width: 50%;
+            /* width: 75vw;
+            height: 100vh; */
+            font-size: 50px;
+            font-size: 2rem;
+            font-size: 2em;
+            font-size: 100px;
+            font-size: 5vw;
+            background-color: transparent;
+            background-color: yellow;
+        }
+
+        aside {
+            width: 100%;
+            border: 10px solid;
+            padding: 20px;
+            margin: 50px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+
+        #search-container {
+            position: relative;
+            width: 15rem;
+        }
+
+        #search-container input {
+            width: 100%;
+        }
+
+        #search-container span {
+            position: absolute;
+            right: 2px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="lorem" style="margin-top: 100px;">Lorem ipsum
+
+        dolor sit amet, consectetur adipisicing elit. Modi, eligendi. Cumque dolorum molestias temporibus
+
+        ducimus corporis itaque perspiciatis? Explicabo quasi, repellendus id culpa commodi doloribus corporis. Odio
+        aliquid soluta quisquam.
+    </div>
+
+    <div id="lorem">Lorem ipsum
+
+        dolor sit amet, consectetur adipisicing elit. Modi, eligendi. Cumque dolorum molestias temporibus
+
+        ducimus corporis itaque perspiciatis? Explicabo quasi, repellendus id culpa commodi doloribus corporis. Odio
+        aliquid soluta quisquam.
+    </div>
+    <div id="box">This is a Div</div>
+
+    <div class="same">1</div>
+    <div class="same">2</div>
+    <div class="same">3</div>
+    <section class="same">4</section>
+    <!-- <header class="same">5</header> -->
+    Maths<input style="background-color: #ff0000;" type="checkbox" name="course" id="maths">
+    <input style="background-color: #ff0000;" type="text" name="course" id="maths">
+    <div class="circle">lorem</div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+
+    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ex, accusamus quisquam est velit
+        perspiciatis nobis quam dolorum veniam ut explicabo? Tenetur dolorem fugit iusto hic perspiciatis ea ad officia.
+        <address>This is address</address>
+    </article>
+
+
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo voluptate sit unde corrupti totam
+        adipisci eius voluptas illo sed. Earum delectus ullam voluptates qui provident veritatis, ducimus deserunt fuga!
+    </aside>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <div id="search-container">
+        <input type="text" placeholder="Enter your name">
+        <span>Show</span>
+    </div>
+
+</body>
+
+</html>
