@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3 of CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Roboto Black";
+            src: url("./assets/fonts/Roboto-Black.ttf");
+        }
+        
+        @font-face {
+            font-family: "Roboto Black";
+            src: url("./assets/fonts/Roboto-Black.ttf");
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Black';
+        }
+
+        .cls1 {
+            background-color: green;
+            color: rgb(238, 255, 0);
+
+
+
+        }
+
+        .cls2 {
+            background-color: orange;
+            color: red;
+
+
+
+        }
+
+        .common {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .cls1.common {
+            border: 2px solid red;
+        }
+
+        /* .cls1 .cls3 {
+            border: 2px solid red;
+        } */
+        div address {
+            border: 2px solid rgb(0, 166, 255);
+
+        }
+
+        /* address {
+            border: 2px solid red;
+
+        } */
+
+        /* div,
+        p {
+            background-color: aquamarine;
+        } */
+
+        div+p {
+            background-color: yellow;
+        }
+
+        button {
+            /* visibility: hidden;
+            display: none; */
+            all: unset;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Submit</button>
+    <span>Submit</span>
+    <div class="cls1 common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem
+        alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!</div>
+    <div class="cls1 common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem
+        alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!
+        <article>
+            <address>This is address</address>
+        </article>
+    </div>
+    <div class="cls1 common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem
+        alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!</div>
+    <div class="cls2 common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem
+        alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!</div>
+    <div class="cls2 common">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem
+        alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam exercitationem alias,
+        delectus
+        expedita dolorem deleniti nulla, aut dicta perspiciatis molestiae minus tenetur eum laborum doloremque in
+        doloribus! Animi, ducimus!</div>
+    <p>paragraph</p>
+    <address>This is address</address>
+
+    <div>this is div</div>
+    <p>paragraph</p>
+
+    <div>this is div</div>
+    <p>paragraph</p>
+
+    <div>this is div</div>
+    <p>paragraph</p>
+    <p>paragraph</p>
+
+</body>
+
+</html>
