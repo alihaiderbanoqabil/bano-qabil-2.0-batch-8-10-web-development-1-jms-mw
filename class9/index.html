@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4 of CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 150vh;
+            display: flex;
+            /* flex-direction: column; */
+            /* align-content: center; */
+            /* align-content: center; */
+            /* flex-direction: row; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* align-items: end; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap;
+            gap: 10px 200px;
+            row-gap: 10px;
+            column-gap: 200px; */
+        }
+
+        .container div:nth-child(3) {
+            height: 200px;
+        }
+
+        .item {
+            background-color: greenyellow;
+            height: 100px;
+            width: 100px;
+            /* margin: 1rem; */
+            padding: 1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header>img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://www.w3schools.com/cssref/pineapple.jpg" alt="">
+        <img src="https://www.w3schools.com/cssref/pineapple.jpg" alt="">
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item">
+            <article>Hello</article>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
