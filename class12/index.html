@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 7 of CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aqua;
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-gap: 1rem 5rem;
+            grid-row-gap: 10rem;
+            grid-column-gap: 5rem; */
+            grid-template-columns: auto auto auto auto;
+            /* grid-row-start: 2;
+            grid-row-end: 2; */
+            grid-template-rows: auto 85vh auto;
+
+
+        }
+
+        header {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        aside {
+            background-color: green;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+        }
+
+        main {
+            background-color: yellow;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+        }
+
+        footer {
+            background-color: rgb(255, 179, 0);
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer>
+    <!-- <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <footer>Footer</footer> -->
+</body>
+
+</html>
