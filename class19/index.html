@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 7 of JS</title>
+  </head>
+  <body>
+    <script>
+      //   console.log("Class 7 of JS");
+
+      //   const studentInfo = { name: "ali", age: 25 };
+      //   const entriesObject = Object.entries(studentInfo);
+      //   console.log(entriesObject);
+
+      //   console.log(Object.fromEntries(entriesObject));
+      //   Object.freeze(studentInfo);
+      //   studentInfo.name = "haider";
+      //   studentInfo.abc = "haider";
+      //   delete studentInfo.name;
+      //   console.log(Object.isFrozen(studentInfo));
+
+      //   const object1 = {
+      //     property1: 42,
+      //   };
+
+      //   //   Object.seal(object1);
+      //   object1.property1 = 33;
+      //   object1.property2 = 33;
+      //   console.log(object1, object1.property1);
+      //   // Expected output: 33
+
+      //   delete object1.property1; // Cannot delete when sealed
+      //   console.log(object1, object1.property1);
+      //   // Expected output: 33
+
+      //   console.log(Object.isSealed(object1));
+
+      //   const person = {
+      //     isHuman: false,
+      //     printIntroduction: function () {
+      //       console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+      //     },
+      //   };
+
+      //   const me = Object.create(person);
+
+      //   me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+      //   me.isHuman = true; // Inherited properties can be overwritten
+
+      //   //   me.printIntroduction();
+
+      //   console.log(person);
+      //   console.log(me);
+
+      //   const cars = ["Saab", "Volvo", "BMW"];
+      //   const cars1 = ["Saab1", "Volvo1", "BMW1"];
+      //   const cars2 = ["Saab2", "Volvo2", "BMW2"];
+      //   const cars3 = ["Saab3", "Volvo3", "BMW3"];
+      //   //   console.log(cars[0], cars[cars.length - 1]);
+      //   //   console.log(cars.at(0), cars.at(-1));
+
+      //   const cars4 = cars1.concat(cars3, cars2);
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   console.log(cars4);
+      //   console.log(fruits.copyWithin(2, 0));
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   const f = fruits.entries();
+
+      //   for (const fruit of f) {
+      //     console.log(fruit[0], fruit[1]);
+      //   }
+
+      const ages1 = [32, 33, 106, 40];
+      const ages2 = [32, 33, 16, 40];
+
+      //   function checkAge(item) {
+      //     console.log("item: ", item);
+      //     return item > 18;
+      //   }
+      //   const checkAge = (item) => {
+      //     console.log("item: ", item);
+      //     return item > 18;
+      //   };
+
+      //   console.log(ages1.every(checkAge));
+      //   console.log(ages2.some(checkAge));
+      //   console.log(
+      //     ages2.some(function (item) {
+      //       console.log("item: ", item);
+      //       return item > 18;
+      //     })
+      //   );
+      //   console.log(
+      //     ages2.some((item) => {
+      //       console.log("item: ", item);
+      //       return item > 18;
+      //     })
+      //   );
+      // console.log(ages2.some(checkAge())); // dont do this
+    </script>
+  </body>
+</html>

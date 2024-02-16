@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 8 of JS</title>
+  </head>
+  <body>
+    <script>
+      const ages = [32, 33, 16, 40];
+      const students = [
+        { name: "ali", age: 12, id: 1 },
+        { name: "haider", age: 55, id: 3 },
+        { name: "haider", age: 34, id: 2 },
+      ];
+      //   const result = ages.filter(checkAdult);
+      //   const filteredStudents = students.filter(checkAdult);
+      //   const findStudent = students.find(checkAdult);
+      //   const findStudent = students.filter(checkAdult);
+
+      //   function checkAdult(item, index, array) {
+      //     console.log(item, index, array,);
+      //     return item >= 18;
+      //   }
+      //   function checkAdult(item, index, array) {
+      //     console.log(item, index, array, item.name);
+      //     return item.name === "haider";
+      //   }
+      function checkAdult(item, index, array) {
+        console.log(item, index, array, item.name);
+        // return  item.age >= 18 && item.name === "haider"
+        return item.id === 1;
+        // if (item.age >= 18 && item.name === "haider") {
+        //   return true;
+        // } else {
+        //   return false;
+        // }
+        // if (item.age >= 18 || item.name === "haider") {
+        //   return true;
+        // } else {
+        //   return false;
+        // }
+        // if (item.age === 25 || item.age === 34) {
+        //   return true;
+        // } else {
+        //   return false;
+        // }
+      }
+
+      //   console.log(ages);
+      //   console.log(result);
+      //   console.log(filteredStudents);
+      //   console.log(findStudent);
+
+      const numbers = [65, 44, 12, 4];
+      const strings = ["haider", "ali"];
+      //   const newArr = numbers.map(myFunction);
+      //   const newArr = strings.map(myFunction);
+
+      //   function myFunction(num) {
+      //     console.log(num);
+      //     return num * 10;
+      //   }
+
+      //   function myFunction(name) {
+      //     console.log(name);
+      //     return name.toUpperCase();
+      //   }
+
+      //   console.log(numbers);
+      //   console.log(strings);
+      //   console.log(newArr);
+
+      //   let sum = 0;
+      //   for (let index = 0; index < numbers.length; index++) {
+      //     const element = numbers[index];
+      //     sum = sum + element;
+      //     console.log(element, sum);
+      //   }
+      //   console.log("sum:", sum);
+
+      //   const sumOfStudentsMarks = numbers.reduce(
+      //     (previousValue, currentValue, currentIndex, array) => {
+      //       console.log(previousValue, currentValue, currentIndex, array);
+      //       return previousValue + currentValue;
+      //     },
+      //     0
+      //   );
+
+      //   console.log("sumOfStudentsMarks: ", sumOfStudentsMarks);
+
+      //   const fruits = ["apple", "orange", "cherry"];
+      //   //   const result = fruits.forEach(myFunction);
+      //   const result = students.forEach(myFunction);
+
+      //   function myFunction(item, index, array) {
+      //     console.log(item, index, array);
+      //     item.gender = "Male";
+      //   }
+      //   console.log(result);
+      //   //   console.log(fruits);
+      //   console.log(students);
+
+      //   const abc = numbers.push(70);
+      //   const xyz = numbers.push(40);
+      //   numbers.push(20, "ali", { name: "ali" });
+      //   numbers.pop();
+      //   numbers.pop();
+      //   numbers.pop();
+
+      //   console.log(numbers, abc, xyz);
+
+      //   numbers.unshift(5);
+      //   numbers.unshift("ali");
+      //   numbers.unshift("haider", { name: "ali" });
+      //   numbers.shift();
+      //   numbers.shift();
+      //   numbers.sort();
+      //   strings.sort();
+      //   console.log(numbers);
+      //   console.log(strings);
+
+      //   console.log("    ali haider   ".trim().toUpperCase());
+      //   console.log([3, 1, 2, 5, 9, 3, 1, 6].sort().reverse());
+
+      const points = [40, 100, 1, 5, 25, 10];
+      //   points.sort(function (a, b) {
+      //     console.log(a, b);
+      //     return a - b;
+      //   });
+      points.sort(function (a, b) {
+        console.log(a, b);
+
+        return b - a;
+      });
+      console.log(points);
+
+      //   join , reverse, sort, reducerReight, isArray, flat, flatMap
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3 of JS</title>
+</head>
+
+<body>
+    <script>
+        let std1Name = "ali1"
+        let std1Age = 21
+
+        let std2Name = "ali3"
+        let std2Age = 23
+
+        let student1Info = {
+            name: 'ali', age: 20,
+            location: { city: "karachi", country: "Pakistan", street: "hous #094302", zipCode: 123 }
+        };
+        let student2Info = {
+            name: 'haider',
+            age: 22,
+            age: 40,
+            isAdult: true,
+            location: {
+                city: "karachi",
+                country: "Pakistan",
+                street: "hous #094302",
+                zipCode: 123
+            },
+            hobbies: ["swimming", "playing", "drinking"]
+        };
+        student2Info.gender = "Male";
+        student2Info["age"] = 30;
+        delete student2Info.age;
+
+        console.log(student1Info, student1Info.name, student1Info.location.city);
+        console.log(student2Info, student2Info['age'], student2Info["location"]["street"]);
+
+
+        const array = ["ali", 24, true, student2Info, student2Info.hobbies]
+        // console.log(array);
+        // console.log(array[4][1],);
+        // console.log(array[3]["isAdult"]);
+        const studentsInfo = [student1Info, student2Info];
+        const studentMarks = [12, 34, 45, 67];
+        // const studentNames = ["ali", "hasnain", "usman"];
+        // studentNames[1] = "haris";
+        // delete studentNames[1]
+        // console.log(studentsInfo);
+        // console.log(studentsInfo[0].name);
+        // console.log(studentsInfo[1].isAdult);
+        // console.log(studentMarks, studentMarks[2]);
+        // console.log(studentNames, studentNames[2]);
+        studentMarks[3] = 35
+        studentMarks[4] = 35
+        studentMarks[10] = 35;
+        
+        // console.log(studentNames[10]);
+        // let age = 20;
+        // let newAge = age;
+        // // age = age - 1;
+        // // age = age - 3;
+        // console.log(2 ** 3, Math.pow(2, 3), --age);
+        // console.log(2 ** 3, Math.pow(2, 3), ++age, --newAge);
+
+    </script>
+</body>
+
+</html>
