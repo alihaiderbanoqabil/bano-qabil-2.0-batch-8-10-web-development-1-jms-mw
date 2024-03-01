@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 12 of JS</title>
+  </head>
+  <body>
+    <!-- <section id="users-container" class="users-container">
+      <div id="div"><h1>hello world</h1></div>
+    </section>
+    <section id="users-container" class="users-container">
+      <div id="div"><h1>hello world</h1></div>
+    </section> -->
+
+    <script>
+      const users = [
+        {
+          id: 1,
+          name: "Leanne Graham",
+          username: "Bret",
+          email: "Sincere@april.biz",
+          address: {
+            street: "Kulas Light",
+            suite: "Apt. 556",
+            city: "Gwenborough",
+            zipcode: "92998-3874",
+            geo: {
+              lat: "-37.3159",
+              lng: "81.1496",
+            },
+          },
+          phone: "1-770-736-8031 x56442",
+          website: "hildegard.org",
+          company: {
+            name: "Romaguera-Crona",
+            catchPhrase: "Multi-layered client-server neural-net",
+            bs: "harness real-time e-markets",
+          },
+        },
+        {
+          id: 2,
+          name: "Ervin Howell",
+          username: "Antonette",
+          email: "Shanna@melissa.tv",
+          address: {
+            street: "Victor Plains",
+            suite: "Suite 879",
+            city: "Wisokyburgh",
+            zipcode: "90566-7771",
+            geo: {
+              lat: "-43.9509",
+              lng: "-34.4618",
+            },
+          },
+          phone: "010-692-6593 x09125",
+          website: "anastasia.net",
+          company: {
+            name: "Deckow-Crist",
+            catchPhrase: "Proactive didactic contingency",
+            bs: "synergize scalable supply-chains",
+          },
+        },
+        {
+          id: 3,
+          name: "Clementine Bauch",
+          username: "Samantha",
+          email: "Nathan@yesenia.net",
+          address: {
+            street: "Douglas Extension",
+            suite: "Suite 847",
+            city: "McKenziehaven",
+            zipcode: "59590-4157",
+            geo: {
+              lat: "-68.6102",
+              lng: "-47.0653",
+            },
+          },
+          phone: "1-463-123-4447",
+          website: "ramiro.info",
+          company: {
+            name: "Romaguera-Jacobson",
+            catchPhrase: "Face to face bifurcated interface",
+            bs: "e-enable strategic applications",
+          },
+        },
+        {
+          id: 4,
+          name: "Patricia Lebsack",
+          username: "Karianne",
+          email: "Julianne.OConner@kory.org",
+          address: {
+            street: "Hoeger Mall",
+            suite: "Apt. 692",
+            city: "South Elvis",
+            zipcode: "53919-4257",
+            geo: {
+              lat: "29.4572",
+              lng: "-164.2990",
+            },
+          },
+          phone: "493-170-9623 x156",
+          website: "kale.biz",
+          company: {
+            name: "Robel-Corkery",
+            catchPhrase: "Multi-tiered zero tolerance productivity",
+            bs: "transition cutting-edge web services",
+          },
+        },
+        {
+          id: 5,
+          name: "Chelsey Dietrich",
+          username: "Kamren",
+          email: "Lucio_Hettinger@annie.ca",
+          address: {
+            street: "Skiles Walks",
+            suite: "Suite 351",
+            city: "Roscoeview",
+            zipcode: "33263",
+            geo: {
+              lat: "-31.8129",
+              lng: "62.5342",
+            },
+          },
+          phone: "(254)954-1289",
+          website: "demarco.info",
+          company: {
+            name: "Keebler LLC",
+            catchPhrase: "User-centric fault-tolerant solution",
+            bs: "revolutionize end-to-end systems",
+          },
+        },
+      ];
+
+      const newUsers = [...users];
+
+      //   const aabba = users.map((user, index) => {
+      //     console.log(user);
+
+      //     // if (index < 3) {
+      //     //   return {
+      //     //     //   id: user.id,
+      //     //     //   name: user.name,
+      //     //     //   company: { bs: user.company.bs },
+      //     //     ...user,
+      //     //     abc: "akjhjdsa",
+      //     //   };
+      //     // } else {
+      //     //   return user;
+      //     // }
+
+      //     return {
+      //       //   id: user.id,
+      //       //   name: user.name,
+      //       //   company: { bs: user.company.bs },
+      //       ...user,
+      //       name: "dsakhkjdsahkjdsa",
+      //       abc: "akjhjdsa",
+      //     };
+      //   });
+      //   console.log(aabba);
+      //   console.log(users);
+      //   console.log(newUsers);
+      //   console.log(...users);
+
+      //   //   const add = (n1, n2, n3, n4) => {
+      //   const add = (n1, n2, ...restNumbers) => {
+      //     // console.log(n1, restNumbers);
+      //     console.log(n1, restNumbers);
+      //   };
+      //   const greet = (info) => {
+      //     // console.log(info);
+      //     const { name, ...restInfo } = info;
+      //     console.log(restInfo);
+      //   };
+
+      //   const numbers = [1091, 28972, 1918];
+      //   //   const [std1, ...remainingStudentsMarks] = numbers;
+      //   const [std1, std2, std3] = numbers;
+      //   console.log(std1, std2, std3);
+
+      //   greet({ name: "ali", age: 34, gender: "male" });
+      //   add(10, 434, 23, 4322);
+
+      const user = {
+        id: 5,
+        name: "Chelsey Dietrich",
+        username: "Kamren",
+        email: "Lucio_Hettinger@annie.ca",
+        address: {
+          street: "Skiles Walks",
+          suite: "Suite 351",
+          city: "Roscoeview",
+          zipcode: "33263",
+          geo: {
+            lat: "-31.8129",
+            lng: "62.5342",
+          },
+        },
+        phone: "(254)954-1289",
+        website: "demarco.info",
+        company: {
+          name: "Keebler LLC",
+          catchPhrase: "User-centric fault-tolerant solution",
+          bs: "revolutionize end-to-end systems",
+        },
+      };
+
+      //   const {
+      //     id,
+      //     name,
+      //     username,
+      //     email,
+      //     // address: {
+      //     //   street,
+      //     //   suite,
+      //     //   city,
+      //     //   zipcode,
+      //     //   geo: { lat, lng },
+      //     // },
+      //     phone,
+      //     website,
+      //     company: { name: companyName, catchPhrase, bs },
+      //   } = user;
+
+      //   const lat = user.address.geo.lat;
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+      //   console.log(user.address.geo.lat);
+
+      //   console.log(lat);
+      //   console.log(lat);
+      //   console.log(lat);
+      //   console.log(lat);
+      //   console.log(lat);
+      //   console.log(lat);
+      //   console.log(lat);
+
+      //   console.log(lat, lng, companyName, name);
+
+      //   const age = 20;
+      //   let isAdult;
+      //   if (age > 148) {
+      //     isAdult = true;
+      //   } else {
+      //     isAdult = false;
+      //   }
+
+      //   let isAdult = age > 18 ? true : false;
+
+      //   console.log(age);
+      //   console.log(isAdult);
+      //   let hello = 0;
+
+      //   if (hello === null || hello === undefined) {
+      //     hello = "ali";
+      //   }
+
+      //   console.log(hello);
+      let hello = null || "ali haider";
+      //   console.log(hello);
+    </script>
+  </body>
+</html>
+
+<!-- <script>
+  function getAllUsers() {
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    // fetch("https://jsonplaceholder.typicode.com/users/1?name=ali&age=20", {
+    fetch("https://jsonplaceholder.typicode.com/users/1", {
+      //   body: JSON.stringify(data),
+      method: "GET",
+      //   headers: {
+      //     Authorization: "Bearer tpokenjfhdkjhfskjhkjshfs",
+      //     "Content-Type": "application/json",
+      //   },
+    })
+      .then((response) => {
+        console.log("response: ", response);
+        return response.json();
+      })
+      .then((users) => {
+        console.log("users: ", users);
+      })
+      .catch((error) => {
+        console.log("error: ", error);
+      });
+  }
+
+  //   getAllUsers();
+
+  const getUsers = async () => {
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/users"
+      );
+      const users = await response.json();
+      console.log(response, "response");
+      console.log(users, "users");
+    } catch (error) {
+      console.log("error: ", error);
+    } finally {
+      console.log("i am always calling");
+    }
+  };
+
+  getUsers();
+</script> -->
+
+<!-- <script>
+  const usersContainer = document.querySelectorAll("#users-container");
+  //   usersContainer.innerHTML =
+  //     usersContainer.innerHTML + "<span>hello world</span>";
+  //   usersContainer.textContent = "hello world";
+  //   console.log(
+  //     // usersContainer.forEach((container) => {
+  //     //   console.log(container.innerHTML);
+  //     // })
+  //     Array.from(usersContainer).
+  //   );
+  console.log(usersContainer.textContent);
+
+  //   const newDiv = document.createElement("div");
+  //   console.log(newDiv);
+</script> -->
